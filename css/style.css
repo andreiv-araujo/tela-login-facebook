@@ -26,6 +26,13 @@ img {
   align-items: center;
 }
 
+@media (max-width: 739px) {
+  .container {
+    flex-direction: column;
+    max-width: 300px;
+  }
+}
+
 .container-info {
   display: flex;
   flex-direction: column;
@@ -42,6 +49,12 @@ img {
   font-family: Helvetica, sans-serif;
   font-size: 1.75em;
   line-height: 1.4em;
+}
+
+@media (max-width: 739px) {
+  .container-info p {
+    display: none;
+  }
 }
 
 .form {
